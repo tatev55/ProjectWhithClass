@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css" integrity="sha512-i1b/nzkVo97VN5WbEtaPebBG8REvjWeqNclJ6AItj7msdVcaveKrlIIByDpvjk5nwHjXkIqGZscVxOrTb9tsMA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/utils.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container w-90 display-flex jc-space-between fd-column ai-center">
+        <header class="header w-100 h-80px display-flex jc-space-around ai-center">
+            <h1> Online Shop</h1>
+            <div class="cart-box w-50px display-flex jc-space-between ai-center" >
+                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="box-cart-count w-20px h-20px display-flex jc-space-center ai-center"></div>         
+            </div>
+            <a href="createProduct.html" class="btn td-none display-flex jc-space-center ai-center">Create Product</a>
+        </header>
+        <div class="main w-100 h-90 display-flex jc-space-between fd-column ">
+            <div class="section-products box-phones w-100 h-33 display-flex jc-space-between ai-center" id="section-phones"></div>
+            <div class="section-products box-laptops w-100 h-33 display-flex jc-space-between ai-center" id="section-laptops"></div>
+            <div class="section-products box-tablets w-100 h-33 display-flex jc-space-between" id="section-tablets"></div>
+        </div>
+    </div>
+
+
+    <script type="module" src="src/scripts/productsModul.js"></script>
+    <script type="module" src="src/scripts/mainModul.js"></script>
+    
+   
+    
+
+
+    
+</body>
+</html>

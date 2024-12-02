@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css" integrity="sha512-i1b/nzkVo97VN5WbEtaPebBG8REvjWeqNclJ6AItj7msdVcaveKrlIIByDpvjk5nwHjXkIqGZscVxOrTb9tsMA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/utils.css">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="container h-100 display-flex fd-column jc-space-between ai-center">
+    <header class="header w-100 h-80px display-flex jc-space-flex-end ai-center">
+        <a class="btn-home w-100px h-40px display-flex jc-space-center ai-center td-none" href="index.html">Home</a>
+    </header>
+    <div class="display-flex jc-space-between w-100">
+        <div class="createdBox w-50  display-flex jc-space-between ai-center"></div>
+        <form action="" class="create-product-form display-flex fd-column w-50">
+            <h2>You can add your product for sale</h2>
+            <label for="select">Select Product Type</label>
+            <select name="" id="select" class="w-500px h-40px">
+                <option value="phone">Phone</option>
+                <option value="laptop">Laptop</option>
+                <option value="tablet">Tablets</option>
+            </select>
+            <label for="product-name">Product Name</label>
+            <input type="text" placeholder="Product Name" class="input  w-500px h-40px" id="product-name">
+            <label for="product-price">Price</label>
+            <input type="number" placeholder="$300..." class="input  w-500px h-40px" min="100" id="product-price">
+            <label for="model">Model</label>
+            <input type="text" id="model" class="input  w-500px h-40px">
+            <label for="product-quantity">quantity</label>
+            <input type="number" placeholder="123...." class="input  w-500px h-40px " min="1" id="product-quantity">
+            <label for="product-image">Link to product image</label>
+            <input type="url" placeholder=".https/...." class="input  w-500px h-40px" id="product-image">
+            <div id="color" class="display-flex fd-column">
+                <label for="product-color">Product-Color</label>
+                <input type="text" placeholder="phone color" id="product-color" class="input  w-500px h-40px">
+            </div>
+            <div id="processor" class="display-none ">
+                <label for="product-processor"> About processor</label>
+                <input type="text" placeholder="description processor" id="product-processor" class="input  w-500px h-40px">
+            </div>
+            <div id="ram" class="display-none ">
+                <label for="product-ram">Ram</label>
+                <input type="text" placeholder="description ram" id="product-ram" class="input  w-500px h-40px">
+            </div>
+            <div id="size" class="display-none ">
+                <label for="product-size">Screen Size</label>
+                <input type="text" id="product-size" placeholder="screen Size" class="input  w-500px h-40px">
+            </div>
+            <div id="battery" class="display-none ">
+                <label for="product-battery">Battery life</label>
+                <input type="text" placeholder="description battery" class="input  w-500px h-40px" id="product-battery">
+            </div>
+            <button class="btn-submit w-100px h-40px">SUBMIT</button>
+        </form>
+    </div>
+</div>
+
+
+    
+    <script type="module" src="src/scripts/createProduct.js"></script>
+
+</body>
+</html>
